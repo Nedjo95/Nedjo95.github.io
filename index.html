@@ -3,29 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dnevni izveštaj PepsiCo</title>
+    <title>Upload Sliku</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <!-- Baner sa slikom na vrhu -->
+    <div id="banner">
+        <img src="baner-slika.jpg" alt="Baner Slika">
+    </div>
 
-    <section id="upload">
-        <h2>Upload Slike</h2>
-        <form id="imageUploadForm">
-            <input type="file" id="imageUpload" accept="image/*">
-        </form>
+    <div id="upload-container">
+        <input type="file" id="imageUpload" accept="image/*">
+        <button id="showImageButton">Prikaži Sliku</button>
         <div id="imagePreview" class="image-preview">
             <p>Izaberite sliku da je prikažete ovde.</p>
         </div>
-    </section>
-
-    <section id="contact">
-        <h2>Kontaktirajte me</h2>
-        <p>Email: <a href="mailto:ime@example.com">ime@example.com</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Moje ime. Sva prava zadržana.</p>
-    </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+
