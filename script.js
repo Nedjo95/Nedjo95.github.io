@@ -19,16 +19,14 @@ document.getElementById('imageUpload').addEventListener('change', function(event
     }
 });
 // Funkcija za prikazivanje slike
-document.getElementById('showImageButton').addEventListener('click', function() {
+function showImage() {
     const imagePreview = document.getElementById('imagePreview');
     if (selectedImage) {
+        // Prikazujemo sliku odmah
         imagePreview.innerHTML = `<img src="${selectedImage}" alt="Uploaded Image" class="uploaded-image">`;
         imagePreview.style.display = 'block';
-    } else {
-        imagePreview.innerHTML = '<p>Izaberite sliku da je prikažete ovde.</p>';
-        imagePreview.style.display = 'block';
     }
-});
+}
 
 // Funkcija za otvaranje dijaloga za odabir slike klikom na dugme
 document.getElementById('imageUploadButton').addEventListener('click', function() {
