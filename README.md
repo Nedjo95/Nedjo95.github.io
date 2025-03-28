@@ -37,6 +37,7 @@
         <form id="imageUploadForm">
             <input type="file" id="imageUpload" accept="image/*">
         </form>
+        <button id="showImageButton">Prikaži Sliku</button>
         <div id="imagePreview" class="image-preview">
             <p>Izaberite sliku da je prikažete ovde.</p>
         </div>
