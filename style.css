@@ -1,4 +1,4 @@
-/* Osnovni stilovi za sajt sa opcijom za upload slike */
+/* Osnovni stilovi za sajt */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Pomeranje sadržaja na vrh i dno */
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
@@ -31,33 +31,51 @@ body {
     object-fit: cover;
 }
 
-/* Stilizovanje upload forme */
-#upload-container {
-    background-color: white;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    margin-bottom: 50px; /* Povećavanje prostora između forme i dugmadi */
-}
-
-/* Dugme za upload i prikaz slike */
-#imageUploadButton,
-#showImageButton {
-    padding: 15px 30px;
-    background-color: blue; /* Plava boja */
+/* Dugme za otvaranje menija */
+.menu-button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Plava boja */
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    margin-bottom: 10px; /* Razmak između dugmadi */
+    margin-bottom: 20px;
     transition: background-color 0.3s;
 }
 
-#imageUploadButton:hover,
-#showImageButton:hover {
+.menu-button:hover {
     background-color: #0056b3; /* Tamnija plava boja pri hover-u */
+}
+
+/* Meni */
+#menu {
+    display: none; /* Meni je skrivljen */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 100px;
+    z-index: 1000;
+}
+
+/* Stilizovanje dugmadi u meniju */
+.menu-item {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #0056b3;
 }
 
 /* Div za prikaz slike */
