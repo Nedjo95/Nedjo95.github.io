@@ -5,22 +5,20 @@
     box-sizing: border-box;
 }
 
-/* Stilizovanje banera sa očuvanjem proporcija */
+/* Stilizovanje banera sa "contain" za celu sliku */
 #banner {
     width: 100%;
-    height: 0;
-    padding-top: 18.75%; /* 100 / 5.33 = 18.75% za proporciju slike */
+    height: 200px; /* Fiksna visina banera */
     overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
 }
-
 #banner img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Prilagođavanje slike banera */
+    object-fit: contain; /* Prilagođavanje slike banera */
 }
 
 /* Postavljanje sadržaja ispod banera */
