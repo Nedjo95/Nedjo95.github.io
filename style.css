@@ -35,9 +35,6 @@ body {
     text-align: center;
 }
 
-
-}
-
 /* Dugme za otvaranje menija */
 .menu-button {
     padding: 10px 20px;
@@ -85,4 +82,44 @@ body {
     background-color: #0056b3;
 }
 
-/* Osnovni stilovi za sajt */
+/* Skrivanje inputa za upload, ali prikazivanje dugmeta */
+#imageUpload {
+    display: none;
+}
+
+#imageUploadButton {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#imageUploadButton:hover {
+    background-color: #218838;
+}
+
+/* Prikazivanje slike */
+#imagePreview {
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+#imagePreview img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Osnovni stilovi za sajt završeni */
