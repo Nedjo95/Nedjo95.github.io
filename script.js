@@ -17,6 +17,11 @@ document.getElementById('imageUpload').addEventListener('change', function(event
     }
 });
 
+// Funkcija za otvaranje dijaloga za odabir slike klikom na dugme
+document.getElementById('imageUploadButton').addEventListener('click', function() {
+    document.getElementById('imageUpload').click();  // Pokreće prozor za selektovanje slike
+});
+
 // Funkcija za prikaz slike
 document.getElementById('showImageButton').addEventListener('click', function() {
     const imagePreview = document.getElementById('imagePreview');
