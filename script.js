@@ -1,5 +1,13 @@
 let selectedImage = null;
 
+// Provera Local Storage-a pri učitavanju stranice
+window.addEventListener('DOMContentLoaded', function() {
+    const savedImage = localStorage.getItem('uploadedImage');
+    if (savedImage) {
+        showImage(savedImage);
+    }
+});
+
 // Funkcija za otvaranje/zatvaranje menija
 document.getElementById('menuButton').addEventListener('click', function() {
     const menu = document.getElementById('menu');
@@ -13,17 +21,19 @@ document.getElementById('imageUpload').addEventListener('change', function(event
         const reader = new FileReader();
         reader.onload = function(e) {
             selectedImage = e.target.result;
-            showImage(); // Poziv funkcije odmah nakon odabira slike
+            localStorage.setItem('uploadedImage', selectedImage); // Čuvanje u Local Storage
+            showImage(selectedImage); // Odmah prikazujemo sliku
         };
         reader.readAsDataURL(file);
     }
 });
+
 // Funkcija za prikazivanje slike
-function showImage() {
+function showImage(imageSrc) {
     const imagePreview = document.getElementById('imagePreview');
-    if (selectedImage) {
+    if (imageSrc) {
         // Prikazujemo sliku odmah
-        imagePreview.innerHTML = `<img src="${selectedImage}" alt="Uploaded Image" class="uploaded-image">`;
+        imagePreview.innerHTML = `<img src="${imageSrc}" alt="Uploaded Image" class="uploaded-image">`;
         imagePreview.style.display = 'block';
     }
 }
