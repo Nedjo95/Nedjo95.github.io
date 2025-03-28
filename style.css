@@ -8,7 +8,7 @@
 /* Stilizovanje banera */
 #banner {
     width: 100%;
-    height: 60px; /* Visina banera */
+    height: 200px; /* Visina banera */
     overflow: hidden;
     position: fixed; /* Postavljanje banera na vrh */
     top: 0; /* Osiguranje da bude na vrhu */
@@ -18,7 +18,7 @@
 
 #banner img {
     width: 100%;
-    height: 60%;
+    height: 100%;
     object-fit: cover; /* Prilagođavanje slike banera */
 }
 
