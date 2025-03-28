@@ -10,7 +10,10 @@
     width: 100%; /* Baner zauzima celu širinu ekrana */
     height: 200px; /* Visina banera */
     overflow: hidden;
-    margin-bottom: 30px; /* Razmak ispod banera */
+    position: fixed; /* Baner ostaje fiksiran na vrhu stranice */
+    top: 0; /* Pozicija na vrhu ekrana */
+    left: 0; /* Poravnanje sa levom ivicom ekrana */
+    z-index: 1000; /* Osiguranje da baner bude ispred ostatka sadržaja */
 }
 
 #banner img {
@@ -24,10 +27,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    margin-top: 200px; /* Razmak koji pomera sadržaj ispod banera */
+    margin-top: 200px; /* Ovaj razmak je sada bitan samo za sadržaj ispod banera */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Pomeramo sadržaj na vrh */
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
 }
@@ -121,5 +124,3 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* Osnovni stilovi za sajt završeni */
