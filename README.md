@@ -18,10 +18,7 @@
         </nav>
     </header>
 
-    <section id="about">
-        <h1>Dobrodošli na moj sajt!</h1>
-        <p>Ovo je moj GitHub web sajt. Ovdje možete pronaći informacije o mojim projektima i kontaktirati me.</p>
-    </section>
+    
 
     <section id="projects">
         <h2>Moji Projekti</h2>
