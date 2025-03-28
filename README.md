@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-<html lang="sr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dobrodošli na Moj GitHub Sajt</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">O meni</a></li>
-                <li><a href="#projects">Projekti</a></li>
-                <li><a href="#upload">Upload Sliku</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
 
     
 
