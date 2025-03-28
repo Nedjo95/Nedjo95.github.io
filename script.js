@@ -3,25 +3,21 @@ let selectedImage = null;
 // Funkcija za otvaranje/zatvaranje menija
 document.getElementById('menuButton').addEventListener('click', function() {
     const menu = document.getElementById('menu');
-    if (menu.style.display === "block") {
-        menu.style.display = "none"; // Zatvori meni
-    } else {
-        menu.style.display = "block"; // Otvori meni
-    }
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
 });
 
-// Funkcija za upload slike
+// Funkcija za učitavanje nove slike
 document.getElementById('imageUpload').addEventListener('change', function(event) {
     const file = event.target.files[0];
     if (file) {
         const reader = new FileReader();
         reader.onload = function(e) {
             selectedImage = e.target.result;
+            showImage(); // Poziv funkcije odmah nakon odabira slike
         };
         reader.readAsDataURL(file);
     }
 });
-
 // Funkcija za prikazivanje slike
 document.getElementById('showImageButton').addEventListener('click', function() {
     const imagePreview = document.getElementById('imagePreview');
