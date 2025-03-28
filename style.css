@@ -107,18 +107,20 @@ body {
 #imagePreview {
     margin-top: 20px;
     display: inline-block;
-    width: 100%;
-    max-width: 1000px;
+    width: 100vw;  /* 100% širine ekrana */
+    height: 100vh; /* 100% visine ekrana */
     border: 2px solid #ddd;
     padding: 10px;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 #imagePreview img {
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Osigurava da slika popuni prostor bez distorzije */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
