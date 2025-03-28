@@ -21,15 +21,12 @@ document.getElementById('imageUpload').addEventListener('change', function(event
 document.getElementById('showImageButton').addEventListener('click', function() {
     const imagePreview = document.getElementById('imagePreview');
     
+    // Proveravamo da li je slika selektovana
     if (selectedImage) {
-        imagePreview.innerHTML = `<img src="${selectedImage}" alt="Uploaded Image">`;
+        imagePreview.innerHTML = `<img src="${selectedImage}" alt="Uploaded Image" class="uploaded-image">`;
         imagePreview.style.display = 'block'; // Prikazivanje slike
     } else {
         imagePreview.innerHTML = '<p>Izaberite sliku da je prikažete ovde.</p>';
+        imagePreview.style.display = 'block'; // Prikazivanje poruke ako slika nije izabrana
     }
-});
-
-// Funkcija za aktiviranje inputa za upload slike
-document.getElementById('imageUploadButton').addEventListener('click', function() {
-    document.getElementById('imageUpload').click();  // Aktivira input za odabir fajla
 });
