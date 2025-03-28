@@ -1,32 +1,16 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Sliku</title>
+    <title>Upload Image</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Baner sa slikom na vrhu -->
-    <div id="banner">
-        <img src="baner-slikaa.jpg" alt="Baner Slika">
-    </div>
+    <div id="imagePreview"></div> <!-- Mesto gde će se prikazivati slika -->
 
-    <!-- Dugme za otvaranje menija -->
-    <button id="menuButton" class="menu-button">Meni</button>
-
-    <!-- Meni koji se pojavljuje na klik -->
-    <div id="menu" class="menu">
-        <!-- Sakrivanje stvarnog inputa, umesto njega koristimo dugme -->
-        <input type="file" id="imageUpload" accept="image/*" style="display: none;">
-        
-        <!-- Dugme za odabir slike -->
-        <button id="imageUploadButton" class="menu-item">Odaberi Sliku</button>
-        
-    <!-- Div za prikaz slike -->
-    <div id="imagePreview" class="image-preview">
-        <p>Izaberite sliku da je prikažete ovde.</p>
-    </div>
+    <input type="file" id="imageUpload" style="display:none;" />
+    <button id="imageUploadButton">Odaberite sliku</button> <!-- Dugme za upload -->
 
     <script src="script.js"></script>
 </body>
