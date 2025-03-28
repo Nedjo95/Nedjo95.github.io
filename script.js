@@ -1,10 +1,10 @@
 let selectedImage = null;
 
-// Provera Local Storage-a pri učitavanju stranice
+// Provera LocalStorage-a pri učitavanju stranice
 window.addEventListener('DOMContentLoaded', function() {
     const savedImage = localStorage.getItem('uploadedImage');
     if (savedImage) {
-        showImage(savedImage); // Ako postoji sačuvana slika, prikazuje je
+        showImage(savedImage); // Ako postoji slika u LocalStorage, prikaži je odmah
     }
 });
 
