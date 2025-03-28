@@ -1,15 +1,4 @@
 
-    
-
-    <section id="projects">
-        <h2>Moji Projekti</h2>
-        <ul>
-            <li><a href="https://github.com/username/projekat1">Projekat 1</a> - Opis projekta 1</li>
-            <li><a href="https://github.com/username/projekat2">Projekat 2</a> - Opis projekta 2</li>
-            <li><a href="https://github.com/username/projekat3">Projekat 3</a> - Opis projekta 3</li>
-        </ul>
-    </section>
-
     <section id="upload">
         <h2>Upload Slike</h2>
         <form id="imageUploadForm">
