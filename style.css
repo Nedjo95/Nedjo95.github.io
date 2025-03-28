@@ -22,7 +22,7 @@ body {
 /* Stilizovanje banera */
 #banner {
     width: 100%;
-    height: 200px; /* Visina banera */
+    height: 400px; /* Visina banera */
     overflow: hidden;
     position: fixed; /* Postavljanje na vrh */
     top: 0; /* Osiguranje da bude na vrhu */
