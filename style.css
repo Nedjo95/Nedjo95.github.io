@@ -7,17 +7,18 @@
 
 /* Stilizovanje banera */
 #banner {
-    width: 100%;
+    width: 100%; /* Baner zauzima celu širinu ekrana */
     height: 200px; /* Visina banera */
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Razmak ispod banera */
 }
 
 #banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; /* Slika zauzima celu širinu banera */
+    height: 100%; /* Slika zauzima celu visinu banera */
+    object-fit: cover; /* Slika popunjava prostor banera sa očuvanjem proporcija */
 }
+
 /* Postavljanje sadržaja ispod banera */
 body {
     font-family: Arial, sans-serif;
@@ -50,7 +51,7 @@ body {
 
 /* Meni */
 #menu {
-    display: none; /* Meni je skrivljen */
+    display: none; /* Meni je skriven */
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -78,51 +79,4 @@ body {
     background-color: #0056b3;
 }
 
-/* Skrivanje inputa za upload, ali prikazivanje dugmeta */
-#imageUpload {
-    display: none;
-}
-
-#imageUploadButton {
-    background-color: #28a745;
-    color: white;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 20px;
-}
-
-#imageUploadButton:hover {
-    background-color: #218838;
-}
-
-/* Prikazivanje slike */
-#imagePreview {
-    margin-top: 20px;
-    display: block;
-    width: 60vw; /* Smanjujemo širinu na 60% širine ekrana */
-    height: 60vh; /* Smanjujemo visinu na 60% visine ekrana */
-    border: 2px solid #ddd;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Slika unutar preview-a */
-#imagePreview img {
-    width: 100%;  /* Slika zauzima celu širinu dostupnog prostora */
-    height: auto; /* Visina se automatski prilagođava proporcionalno */
-    object-fit: contain; /* Zadržava proporcije slike bez distorzije */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-
-
-
-/* Osnovni stilovi za sajt završeni */
+/* Skrivanje inputa za*
