@@ -12,23 +12,30 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Pomeramo sadržaj na vrh */
     align-items: center;
     text-align: center;
+    margin-top: 220px; /* Povećavanje razmaka da bi sadržaj bio ispod banera */
 }
+
 
 /* Stilizovanje banera */
 #banner {
     width: 100%;
     height: 200px; /* Visina banera */
     overflow: hidden;
-    margin-bottom: 30px;
+    position: fixed; /* Postavljanje na vrh */
+    top: 0; /* Osiguranje da bude na vrhu */
+    left: 0; /* Poravnanje sa levim ivicom */
+    z-index: 1000; /* Osiguranje da bude ispred ostatka sadržaja */
 }
 
 #banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
 }
 
 /* Dugme za otvaranje menija */
