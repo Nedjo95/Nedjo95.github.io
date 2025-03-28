@@ -107,21 +107,24 @@ body {
 #imagePreview {
     margin-top: 20px;
     display: block;
-    width: 80vw; /* Smanjujemo širinu na 80% širine ekrana */
-    height: 80vh; /* Smanjujemo visinu na 80% visine ekrana */
-    border: none;
-    padding: 0;
-    border-radius: 0;
+    width: 60vw; /* Smanjujemo širinu na 60% širine ekrana */
+    height: 60vh; /* Smanjujemo visinu na 60% visine ekrana */
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
     background-color: #fff;
-    box-shadow: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Povećana slika, sada sa smanjenim dimenzijama */
+/* Slika unutar preview-a */
 #imagePreview img {
-    width: 80vw;  /* Slika zauzima 80% širine ekrana */
-    height: 80vh;  /* Slika zauzima 80% visine ekrana */
-    object-fit: cover;  /* Slika popunjava prostor, a da zadrži proporcije */
+    width: 100%;  /* Slika zauzima celu širinu dostupnog prostora */
+    height: auto; /* Visina se automatski prilagođava proporcionalno */
+    object-fit: contain; /* Zadržava proporcije slike bez distorzije */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 
 
