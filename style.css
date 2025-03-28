@@ -11,9 +11,9 @@ body {
     color: #333;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    justify-content: space-between; /* Pomeranje sadržaja na vrh i dno */
+    align-items: center;
     text-align: center;
 }
 
@@ -38,26 +38,29 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 400px;
+    margin-bottom: 50px; /* Povećavanje prostora između forme i dugmadi */
 }
 
+/* Dugme za upload i prikaz slike */
 #imageUploadButton,
 #showImageButton {
     padding: 15px 30px;
-    background-color: #4CAF50;
+    background-color: #007BFF; /* Plava boja */
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Razmak između dugmadi */
     transition: background-color 0.3s;
 }
 
 #imageUploadButton:hover,
 #showImageButton:hover {
-    background-color: #45a049;
+    background-color: #0056b3; /* Tamnija plava boja pri hover-u */
 }
 
+/* Div za prikaz slike */
 #imagePreview {
     max-width: 100%;
     max-height: 90vh;
