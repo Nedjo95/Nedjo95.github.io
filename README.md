@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>DNEVNI IZVEŠTAJ</h1>
+        <h1>DobrodoĹˇli na moj Web Sajt</h1>
     </header>
 
     <main>
