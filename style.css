@@ -106,26 +106,23 @@ body {
 /* Prikazivanje slike */
 #imagePreview {
     margin-top: 20px;
-    display: block; /* Uveri se da je prikazano kao blok element */
-    width: 90%; /* Slika koristi celu širinu svog roditeljskog elementa */
-    max-width: 90%; /* Pokušaj sa uklanjanjem bilo kakvog ograničenja */
-    height: auto;
-    border: 2px solid #ddd;
-    padding: 10px;
-    border-radius: 8px;
+    display: block;
+    width: 80vw; /* Smanjujemo širinu na 80% širine ekrana */
+    height: 80vh; /* Smanjujemo visinu na 80% visine ekrana */
+    border: none;
+    padding: 0;
+    border-radius: 0;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
 }
 
-/* Povećana slika */
+/* Povećana slika, sada sa smanjenim dimenzijama */
 #imagePreview img {
-    width: 90%;  /* Slika će zauzeti celu širinu svog roditeljskog elementa */
-    height: auto;  /* Visina će se automatski prilagoditi */
-    max-width: none; /* Ukloni bilo kakva maksimalna ograničenja */
-    object-fit: contain;  /* Slika će biti proporcionalna, bez distorzije */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80vw;  /* Slika zauzima 80% širine ekrana */
+    height: 80vh;  /* Slika zauzima 80% visine ekrana */
+    object-fit: cover;  /* Slika popunjava prostor, a da zadrži proporcije */
 }
+
 
 
 
