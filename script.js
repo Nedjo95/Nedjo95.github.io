@@ -8,12 +8,6 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Funkcija za otvaranje/zatvaranje menija
-document.getElementById('menuButton').addEventListener('click', function() {
-    const menu = document.getElementById('menu');
-    menu.style.display = (menu.style.display === "block") ? "none" : "block";
-});
-
 // Funkcija za učitavanje nove slike
 document.getElementById('imageUpload').addEventListener('change', function(event) {
     const file = event.target.files[0];
