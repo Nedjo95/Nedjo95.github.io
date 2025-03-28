@@ -106,21 +106,23 @@ body {
 /* Prikazivanje slike */
 #imagePreview {
     margin-top: 20px;
-    display: inline-block;
-    width: 100vw;  /* 100% širine ekrana */
-    height: 100vh; /* 100% visine ekrana */
+    display: block; /* Uveri se da je prikazano kao blok element */
+    width: 100%; /* Slika koristi celu širinu svog roditeljskog elementa */
+    max-width: 100%; /* Pokušaj sa uklanjanjem bilo kakvog ograničenja */
+    height: auto;
     border: 2px solid #ddd;
     padding: 10px;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
 }
 
+/* Povećana slika */
 #imagePreview img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover; /* Osigurava da slika popuni prostor bez distorzije */
+    width: 100%;  /* Slika će zauzeti celu širinu svog roditeljskog elementa */
+    height: auto;  /* Visina će se automatski prilagoditi */
+    max-width: none; /* Ukloni bilo kakva maksimalna ograničenja */
+    object-fit: contain;  /* Slika će biti proporcionalna, bez distorzije */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
