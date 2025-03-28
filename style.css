@@ -121,5 +121,34 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* Dugme sa lokalnom ikonom */
+#imageUploadButton {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Poravnavanje slike i teksta */
+    justify-content: center;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+/* Ikona kao slika */
+#imageUploadButton .icon {
+    width: 20px; /* Veličina slike ikone */
+    height: auto;
+    margin-right: 8px; /* Razmak između slike i teksta */
+}
+
+/* Efekat na hover */
+#imageUploadButton:hover {
+    background-color: #218838;
+}
+
+
 
 /* Osnovni stilovi za sajt završeni */
