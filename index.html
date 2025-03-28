@@ -9,23 +9,27 @@
 <body>
     <!-- Baner sa slikom na vrhu -->
     <div id="banner">
-        <img src="baner-slikaa.jpg" alt="Baner Slika">
+        <img src="images/baner-slika.jpg" alt="Baner Slika">
     </div>
 
-    <div id="upload-container">
+    <!-- Dugme za otvaranje menija -->
+    <button id="menuButton" class="menu-button">Meni</button>
+
+    <!-- Meni koji se pojavljuje na klik -->
+    <div id="menu" class="menu">
         <!-- Sakrivanje stvarnog inputa, umesto njega koristimo dugme -->
         <input type="file" id="imageUpload" accept="image/*" style="display: none;">
         
         <!-- Dugme za odabir slike -->
-        <button id="imageUploadButton">Odaberi Sliku</button>
+        <button id="imageUploadButton" class="menu-item">Odaberi Sliku</button>
         
         <!-- Dugme za prikaz slike -->
-        <button id="showImageButton">Prikaži Sliku</button>
-        
-        <!-- Div za prikaz slike -->
-        <div id="imagePreview" class="image-preview">
-            <p>Izaberite sliku da je prikažete ovde.</p>
-        </div>
+        <button id="showImageButton" class="menu-item">Prikaži Sliku</button>
+    </div>
+
+    <!-- Div za prikaz slike -->
+    <div id="imagePreview" class="image-preview">
+        <p>Izaberite sliku da je prikažete ovde.</p>
     </div>
 
     <script src="script.js"></script>
