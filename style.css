@@ -107,8 +107,8 @@ body {
 #imagePreview {
     margin-top: 20px;
     display: block; /* Uveri se da je prikazano kao blok element */
-    width: 100%; /* Slika koristi celu širinu svog roditeljskog elementa */
-    max-width: 100%; /* Pokušaj sa uklanjanjem bilo kakvog ograničenja */
+    width: 90%; /* Slika koristi celu širinu svog roditeljskog elementa */
+    max-width: 90%; /* Pokušaj sa uklanjanjem bilo kakvog ograničenja */
     height: auto;
     border: 2px solid #ddd;
     padding: 10px;
@@ -119,7 +119,7 @@ body {
 
 /* Povećana slika */
 #imagePreview img {
-    width: 100%;  /* Slika će zauzeti celu širinu svog roditeljskog elementa */
+    width: 90%;  /* Slika će zauzeti celu širinu svog roditeljskog elementa */
     height: auto;  /* Visina će se automatski prilagoditi */
     max-width: none; /* Ukloni bilo kakva maksimalna ograničenja */
     object-fit: contain;  /* Slika će biti proporcionalna, bez distorzije */
