@@ -5,22 +5,18 @@
     box-sizing: border-box;
 }
 
-/* Stilizovanje banera sa očuvanjem proporcija */
+/* Stilizovanje banera */
 #banner {
     width: 100%;
-    height: 200px; /* Definišemo visinu banera, možeš promeniti vrednost */
+    height: 200px; /* Visina banera */
     overflow: hidden;
-    position: fixed; /* Baner je fiksiran na vrhu stranice */
-    top: 0; /* Stavimo baner na vrh stranice */
-    left: 0; /* Poravnanje sa levom ivicom */
-    z-index: 1000; /* Osiguranje da baner bude iznad drugih elemenata */
-    background-color: #fff; /* Pozadinska boja banera, samo za slučaj da slika nije učitana */
+    margin-bottom: 30px;
 }
 
 #banner img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Popunjava prostor banera sa očuvanjem proporcija */
+    object-fit: cover;
 }
 /* Postavljanje sadržaja ispod banera */
 body {
