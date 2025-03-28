@@ -1,5 +1,4 @@
 /* Osnovni stilovi za sajt sa opcijom za upload slike */
-
 * {
     margin: 0;
     padding: 0;
@@ -35,33 +34,50 @@ body {
 /* Stilizovanje upload forme */
 #upload-container {
     background-color: white;
-    padding: 20px;
+    padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Definisanje širine forme */
 }
 
-#imageUpload {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+input[type="file"] {
+    display: none; /* Sakrivanje stvarnog inputa */
+}
+
+#imageUploadButton {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
 }
 
+#imageUploadButton:hover {
+    background-color: #45a049;
+}
+
+/* Dugme za prikaz slike */
 #showImageButton {
-    padding: 10px 20px;
+    padding: 15px 30px;
     background-color: #333;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     margin-bottom: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 #showImageButton:hover {
     background-color: #555;
 }
 
+/* Stilizovanje prikaza slike */
 #imagePreview {
     max-width: 100%;
     max-height: 90vh;
@@ -73,4 +89,6 @@ body {
     width: 100%;
     height: auto;
     max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
