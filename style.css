@@ -23,23 +23,20 @@
     object-fit: cover;
 }
 
-/* Dugme za dodavanje slike na baneru */
 #imageUploadButton {
-    position: absolute;
-    top: 20px; /* Pomeramo ga nadole za 20px od vrha banera */
-    right: 20px; /* Pomeramo ga ulevo za 20px od desnog ruba banera */
-    background-color: rgba(40, 167, 69, 0.8); /* Providna zelena boja */
+    background-color: #28a745;
     color: white;
-    padding: 10px 15px;
-    font-size: 14px;
-    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 20px; /* Razmak iznad dugmeta */
 }
 
 #imageUploadButton:hover {
-    background-color: rgba(33, 136, 56, 0.9);
+    background-color: #218838;
 }
 
 
