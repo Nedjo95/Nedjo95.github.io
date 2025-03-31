@@ -1,25 +1,16 @@
-/* Osnovni stilovi za sajt */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Stilizovanje banera */
 #banner {
     width: 100%;
-    height: 200px;
+    height: auto; /* Automatska visina u zavisnosti od slike */
     overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
     z-index: 1000;
 }
 
 #banner img {
     width: 100%;
-    height: 100%;
-    object-fit: contain; /* Umesto cover, da slika bude u celosti vidljiva */
+    height: auto; /* Omogućava da slika bude proporcionalno visoka */
+    object-fit: contain; /* Slika će biti u celosti vidljiva, ali mogu postojati prazni prostori */
 }
 
 /* Postavljanje sadržaja ispod banera */
@@ -27,7 +18,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    padding-top: 200px; /* Umesto margin-top */
+    padding-top: 20px; /* Manji razmak između banera i sadržaja */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
