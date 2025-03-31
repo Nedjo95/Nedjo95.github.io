@@ -81,7 +81,7 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
-    margin-top: 100px;
+    margin: 100px auto; /* Centriranje */
 }
 
 .login-container h2 {
@@ -103,10 +103,6 @@ body {
     margin: 10px 0;
 }
 
-.remember-me input {
-    margin-right: 5px;
-}
-
 button {
     width: 100%;
     padding: 10px;
@@ -126,3 +122,7 @@ button:hover {
     margin-top: 10px;
 }
 
+/* Sakrivanje sadržaja pre prijave */
+#content {
+    display: none;
+}
