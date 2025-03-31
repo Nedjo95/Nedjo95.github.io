@@ -23,34 +23,12 @@
     object-fit: cover;
 }
 
-#imagePreview {
-    margin-bottom: 20px; /* Dodatni prostor ispod slike */
-}
-
-#imageUploadButton {
-    display: block; /* Osigurava da je vidljivo */
-    background-color: #28a745;
-    color: white;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 20px; /* Povećan razmak iznad dugmeta */
-}
-
-#imageUploadButton:hover {
-    background-color: #218838;
-}
-
-
 /* Postavljanje sadržaja ispod banera */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    margin-top: 200px; /* Ovaj razmak je sada bitan samo za sadržaj ispod banera */
+    margin-top: 200px; /* Razmak ispod banera */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -58,59 +36,9 @@ body {
     text-align: center;
 }
 
-/* Dugme za otvaranje menija */
-.menu-button {
-    padding: 10px 20px;
-    background-color: #007BFF; /* Plava boja */
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 20px;
-    transition: background-color 0.3s;
-}
-
-.menu-button:hover {
-    background-color: #0056b3; /* Tamnija plava boja pri hover-u */
-}
-
-/* Meni */
-#menu {
-    display: none; /* Meni je skriven */
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 100px;
-    z-index: 1000;
-}
-
-/* Stilizovanje dugmadi u meniju */
-.menu-item {
-    background-color: #007BFF;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 10px;
-    width: 100%;
-    transition: background-color 0.3s;
-}
-
-.menu-item:hover {
-    background-color: #0056b3;
-}
-
-/* Skrivanje inputa za upload, ali prikazivanje dugmeta */
-#imageUpload {
-    display: none;
-}
-
+/* Dugme za dodavanje slike */
 #imageUploadButton {
+    display: block;
     background-color: #28a745;
     color: white;
     padding: 12px 20px;
@@ -119,19 +47,26 @@ body {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-top: 20px;
+    margin-top: 20px; /* Razmak ispod slike */
+    position: relative; /* Osigurava da dugme ne bude preklopljeno */
+    z-index: 10; /* Daje prednost nad ostalim elementima */
 }
 
 #imageUploadButton:hover {
     background-color: #218838;
 }
 
+/* Skrivanje default inputa za upload */
+#imageUpload {
+    display: none;
+}
+
 /* Prikazivanje slike */
 #imagePreview {
     margin-top: 20px;
     display: block;
-    width: 60vw; /* Širina slike na 60% širine ekrana */
-    height: 60vh; /* Visina slike na 60% visine ekrana */
+    width: 60vw;
+    height: 60vh;
     border: 2px solid #ddd;
     padding: 10px;
     border-radius: 8px;
@@ -141,9 +76,9 @@ body {
 
 /* Slika unutar preview-a */
 #imagePreview img {
-    width: 100%;  /* Slika zauzima celu širinu dostupnog prostora */
-    height: auto; /* Visina se automatski prilagođava proporcionalno */
-    object-fit: contain; /* Zadržava proporcije slike bez distorzije */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
