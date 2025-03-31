@@ -1,7 +1,7 @@
 /* Stilizovanje banera */
 #banner {
     width: 100%;
-    max-height: 200px; /* Postavljamo maksimalnu visinu banera */
+    max-height: 150px; /* Postavljamo maksimalnu visinu banera */
     overflow: hidden;
     position: relative;
     z-index: 1000;
