@@ -35,4 +35,41 @@ function showImage(imageSrc) {
 // Funkcija za otvaranje dijaloga za odabir slike klikom na dugme
 document.getElementById('imageUploadButton').addEventListener('click', function() {
     document.getElementById('imageUpload').click(); // Otvorite dijalog za odabir slike
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("loginForm");
+    const errorMessage = document.getElementById("error-message");
+
+    // Ako su podaci sačuvani, popuni polja
+    if (localStorage.getItem("rememberMe") === "true") {
+        document.getElementById("username").value = localStorage.getItem("username");
+        document.getElementById("rememberMe").checked = true;
+    }
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Sprečava reload stranice
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const rememberMe = document.getElementById("rememberMe").checked;
+
+        // Ovde možeš dodati pravu proveru (bazu podataka)
+        if (username === "admin" && password === "1234") {
+            // Čuvamo podatke ako korisnik klikne "Zapamti me"
+            if (rememberMe) {
+                localStorage.setItem("rememberMe", "true");
+                localStorage.setItem("username", username);
+            } else {
+                localStorage.removeItem("rememberMe");
+                localStorage.removeItem("username");
+            }
+
+            alert("Uspešno ste prijavljeni!");
+            window.location.href = "dashboard.html"; // Preusmeravanje na drugu stranicu
+        } else {
+            errorMessage.textContent = "Pogrešno korisničko ime ili lozinka!";
+        }
+    });
+
+
 });
