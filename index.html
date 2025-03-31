@@ -3,39 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Image</title>
+    <title>Login & Sajt</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Baner sa slikom -->
-    <div id="banner">
-        <img src="baner-slikaa.jpg" alt="Banner Image">
-    </div>
-    <!-- Mesto gde će se prikazivati slika -->
-    <div id="imagePreview"></div>
 
-    <input type="file" id="imageUpload" style="display:none;" />
-    <button id="imageUploadButton">Upload Picture</button> <!-- Dugme za upload -->
+    <!-- Login forma -->
+    <div id="loginContainer" class="login-container">
+        <h2>Prijava</h2>
+        <form id="loginForm">
+            <label for="username">Korisničko ime</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Lozinka</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="remember-me">
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe">Zapamti me</label>
+            </div>
+
+            <button type="submit">Prijavi se</button>
+        </form>
+        <p id="error-message" class="error"></p>
+    </div>
+
+    <!-- Sadržaj sajta (skriven dok se korisnik ne prijavi) -->
+    <div id="content" style="display: none;">
+        <!-- Baner sa slikom -->
+        <div id="banner">
+            <img src="baner-slikaa.jpg" alt="Banner Image">
+        </div>
+
+        <!-- Mesto gde će se prikazivati slika -->
+        <div id="imagePreview"></div>
+
+        <input type="file" id="imageUpload" style="display:none;" />
+        <button id="imageUploadButton">Upload Picture</button> <!-- Dugme za upload -->
+    </div>
 
     <script src="script.js"></script>
 </body>
-<div class="login-container">
-    <h2>Prijava</h2>
-    <form id="loginForm">
-        <label for="username">Korisničko ime</label>
-        <input type="text" id="username" name="username" required>
-
-        <label for="password">Lozinka</label>
-        <input type="password" id="password" name="password" required>
-
-        <div class="remember-me">
-            <input type="checkbox" id="rememberMe">
-            <label for="rememberMe">Zapamti me</label>
-        </div>
-
-        <button type="submit">Prijavi se</button>
-    </form>
-    <p id="error-message" class="error"></p>
-</div>
-    
 </html>
