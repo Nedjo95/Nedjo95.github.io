@@ -1,7 +1,7 @@
 /* Stilizovanje banera */
 #banner {
     width: 100%;
-    height: auto; /* Automatska visina u zavisnosti od slike */
+    max-height: 400px; /* Postavljamo maksimalnu visinu banera */
     overflow: hidden;
     position: relative;
     z-index: 1000;
@@ -11,6 +11,7 @@
     width: 100%;
     height: auto; /* Omogućava da slika bude proporcionalno visoka */
     object-fit: contain; /* Slika će biti u celosti vidljiva, ali mogu postojati prazni prostori */
+    max-height: 100%; /* Osiguravamo da slika ne pređe maksimalnu visinu banera */
 }
 
 /* Postavljanje sadržaja ispod banera */
