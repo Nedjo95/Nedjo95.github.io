@@ -23,7 +23,12 @@
     object-fit: cover;
 }
 
+#imagePreview {
+    margin-bottom: 20px; /* Dodatni prostor ispod slike */
+}
+
 #imageUploadButton {
+    display: block; /* Osigurava da je vidljivo */
     background-color: #28a745;
     color: white;
     padding: 12px 20px;
@@ -32,7 +37,7 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-top: 20px; /* Razmak iznad dugmeta */
+    margin-top: 20px; /* Povećan razmak iznad dugmeta */
 }
 
 #imageUploadButton:hover {
